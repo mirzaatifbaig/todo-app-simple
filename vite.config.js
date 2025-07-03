@@ -5,7 +5,7 @@ import { defineConfig } from "vite"
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/tood-app-simple/",
+  base: "/todo-app-simple/",
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
