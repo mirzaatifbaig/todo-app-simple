@@ -1,5 +1,6 @@
 import { TodoList } from "@/components/TodoList";
 import "./App.css";
+import SwitchTheme from "@/components/ui/switch-theme.jsx";
 
 function App() {
   return (

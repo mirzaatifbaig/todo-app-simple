@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle2, Circle, Plus, Trash2 } from "lucide-react";
+import SwitchTheme from "@/components/ui/switch-theme.jsx";
 
 export const TodoList = () => {
   const [todos, setTodos] = useState([]);
@@ -46,9 +47,13 @@ export const TodoList = () => {
     <div className="w-full max-w-md mx-auto">
       <Card>
         <CardHeader>
-          <CardTitle className="text-2xl font-bold text-center flex items-center justify-center gap-2">
-            <CheckCircle2 className="h-6 w-6 text-primary" />
-            Todo List
+          <CardTitle className="text-2xl font-bold text-center flex items-center justify-center gap-2"><div className="flex items-center justify-between w-full">
+            <SwitchTheme className="rounded-full h-10 w-10" />
+            <div className="flex items-center gap-2 mx-auto">
+              <CheckCircle2 className="h-6 w-6 text-primary" />
+              <span>Todo List</span>
+            </div>
+          </div>
           </CardTitle>
           {totalCount > 0 && (
             <p className="text-sm text-muted-foreground text-center">
